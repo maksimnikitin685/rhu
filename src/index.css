@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+/* 
+  Стили стандартного браузера (User Agent Stylesheet)
+  для аутентичного отображения базовых тегов HTML без фреймворков,
+  как в первых главах самоучителя по HTML:
+*/
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 10px;
+  line-height: normal;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px !important;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px !important;
+}
+
+li {
+  display: list-item !important;
+  margin-bottom: 4px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  border: 0;
+  border-top: 2px groove #cccccc;
+}
+
+a {
+  color: #0000ee;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff0000;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
+table[border],
+table[border="1"],
+table[border="2"] {
+  border: 2px outset #808080;
+}
+
+table[border] td,
+table[border] th,
+table[border="1"] td,
+table[border="1"] th,
+table[border="2"] td,
+table[border="2"] th {
+  border: 1px inset #808080;
+  padding: 4px 6px;
+}
+
+th {
+  font-weight: bold;
+  text-align: center;
+  background-color: #dfdfdf;
+}
+
+center {
+  text-align: center;
+}
+
+marquee {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffcc;
+  padding: 3px 0;
+  border: 1px solid #cccccc;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border: 1px solid #7f9db9;
+  padding: 2px 4px;
+  background: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+  background-color: #e1e1e1;
+  border: 2px outset #ffffff;
+  padding: 2px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active {
+  border-style: inset;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes marqueeAnim {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
